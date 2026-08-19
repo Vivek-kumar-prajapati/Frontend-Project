@@ -150,7 +150,7 @@ const addToCart = (product) => {
 };
 
 const initApp = () => {
-  fetch("product.json")
+  fetch(`${import.meta.env.BASE_URL}products.json`)
     .then((response) => {
       return response.json();
     })

@@ -1,14 +1,19 @@
 {
   "name": "ecommerce-project-01",
+  "homepage": "https://Vivek-kumar-prajapati.github.io/Frontend-Project/",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.5",
+    "gh-pages": "^6.3.0",
     "vite": "^8.0.10"
   }
 }
